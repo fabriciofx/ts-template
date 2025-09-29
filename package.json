@@ -8,7 +8,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-      "test:all": "node --env-file=.env --import tsx --experimental-test-coverage --test test/**/**.test.ts",
+      "test:all": "node --env-file=.env --import tsx --experimental-test-coverage --test test/**/*.test.ts",
       "test:watch": "node --env-file=.env --import tsx --experimental-test-coverage --watch --test",
       "test": "node --env-file=.env --import tsx --test",
       "build": "npx tsc --project tsconfig.prod.json",
