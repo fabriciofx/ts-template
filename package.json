@@ -8,15 +8,15 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-      "test:all": "node --env-file=.env --import tsx --experimental-test-coverage --test test/**/*.test.ts",
-      "test:watch": "node --env-file=.env --import tsx --experimental-test-coverage --watch --test",
-      "test": "node --env-file=.env --import tsx --test",
-      "build": "npx tsc --project tsconfig.prod.json",
-      "build:dev": "npx --env-file=.env tsc --project tsconfig.json",
-      "start": "node dist/index.js",
-      "dev": "node --env-file=.env --import tsx src/index.ts",
-      "lint": "npx eslint --fix ./src ./test",
-      "check": "npm audit & npm outdated & npm run lint & npm run build -- --noEmit"
+    "test:all": "node --env-file=.env --import tsx --experimental-test-coverage --test test/**/*.test.ts",
+    "test:watch": "node --env-file=.env --import tsx --experimental-test-coverage --watch --test",
+    "test": "node --env-file=.env --import tsx --test",
+    "build": "npx tsc --project tsconfig.prod.json",
+    "build:dev": "npx --env-file=.env tsc --project tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "node --env-file=.env --import tsx src/index.ts",
+    "lint": "npx eslint --fix ./src ./test",
+    "check": "npm audit & npm outdated & npm run lint & npm run build -- --noEmit"
   },
   "devDependencies": {
     "@types/node": "^24.5.2",
