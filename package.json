@@ -13,12 +13,12 @@
       "test": "node --env-file=.env --import tsx --test",
       "build": "npx tsc --project tsconfig.prod.json",
       "build:dev": "npx --env-file=.env tsc --project tsconfig.json",
-      "start": "node dist/server.js",
-      "dev": "node --env-file=.env --import tsx src/server.ts",
+      "start": "node dist/index.js",
+      "dev": "node --env-file=.env --import tsx src/index.ts",
       "lint": "npx eslint --fix ./src ./test",
       "check": "npm audit & npm outdated & npm run lint & npm run build -- --noEmit",
       "migrate": "node  dist/cli/kysely.js",
-      "migrate:dev": "node --env-file=.env --import tsx src/cli/kysely.ts "
+      "migrate:dev": "node --env-file=.env --import tsx src/cli/kysely.ts"
   },
   "devDependencies": {
     "@types/node": "^24.5.2",
