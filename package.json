@@ -16,9 +16,7 @@
       "start": "node dist/index.js",
       "dev": "node --env-file=.env --import tsx src/index.ts",
       "lint": "npx eslint --fix ./src ./test",
-      "check": "npm audit & npm outdated & npm run lint & npm run build -- --noEmit",
-      "migrate": "node  dist/cli/kysely.js",
-      "migrate:dev": "node --env-file=.env --import tsx src/cli/kysely.ts"
+      "check": "npm audit & npm outdated & npm run lint & npm run build -- --noEmit"
   },
   "devDependencies": {
     "@types/node": "^24.5.2",
